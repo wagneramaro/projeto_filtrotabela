@@ -26,12 +26,12 @@ if(isset($_POST['sexo']) && $_POST['sexo'] != '' ){
 
 <form method="POST">
 
-	<select name="sexo">
+	<select name="sexo" onchange="this.form.submit()">
 		<option></option>
 		<option value="0" <?php echo ($sexo=='0')?'selected="selected"':''; ?>>Masculino</option>
 		<option value="1" <?php echo ($sexo=='1')?'selected="selected"':''; ?>>Feminino</option>
 	</select>
-	<input type="submit" value="Filtrar">
+	
 
 </form>
 
